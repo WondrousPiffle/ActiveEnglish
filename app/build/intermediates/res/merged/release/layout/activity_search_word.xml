@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nuffsaidm8.me.activeenglish.SearchWord"
+    android:background="@drawable/appbackground">
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/search"
+        android:contentDescription=""
+        android:onClick="searchForWord"
+        android:background="@drawable/magni"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/findaword"
+        android:id="@+id/findAWord"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchinput"
+        android:gravity="center_horizontal"
+        android:width="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:height="40dp"
+        android:layout_below="@+id/findAWord"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/worddef"
+        android:id="@+id/wordShower"
+        android:layout_below="@+id/searchinput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showWord"
+        android:gravity="center_horizontal"
+        android:width="150dp"
+        android:layout_below="@+id/wordShower"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/transstring"
+        android:id="@+id/transdef"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/showWord"
+        android:layout_alignLeft="@+id/findAWord"
+        android:layout_alignStart="@+id/findAWord"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showtrans"
+        android:width="150dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/transdef"
+        android:layout_alignLeft="@+id/showWord"
+        android:layout_alignStart="@+id/showWord"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/hint"
+        android:id="@+id/hintlabel"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/showtrans"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showhint"
+        android:gravity="center_horizontal"
+        android:width="150dp"
+        android:layout_below="@+id/hintlabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nextDate"
+        android:id="@+id/newDateView"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/showhint"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/NA"
+        android:id="@+id/nextDateDisplay"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/newDateView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_below="@+id/nextDateDisplay"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:text="@string/adfazsdfasdfadfsagjlfkdlgjklfsadgfjgps"
+            android:onClick="resetDates"
+            android:background="@drawable/loadup_button_1"
+            android:id="@+id/resetDatesButton"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:onClick="home"
+            android:id="@+id/homeButtonSearch"
+            android:background="@drawable/loadup_button_1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submitchanges"
+            android:onClick="submitChanges"
+            android:background="@drawable/loadup_button_1"
+            android:id="@+id/submitchanges"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/trashButtonSearch"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="trash"
+        android:background="@drawable/cutoutsymbol"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

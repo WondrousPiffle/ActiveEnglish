@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nuffsaidm8.me.activeenglish.ChooserActivity"
+    android:background="@drawable/appbackground">
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/doneButton"
+        android:onClick="done"
+        android:background="@drawable/check"
+        android:layout_above="@+id/DaysLabel"
+        android:layout_alignRight="@+id/rightArrow"
+        android:layout_alignEnd="@+id/rightArrow" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/cancelbutton"
+        android:onClick="cancel"
+        android:background="@drawable/x"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:onClick="leftArrow"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftArrow"
+        android:background="@drawable/leftarrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:onClick="rightArrow"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightArrow"
+        android:background="@drawable/rightarrow"
+        android:layout_alignTop="@+id/leftArrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/waitDefault"
+        android:id="@+id/waitNum"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/cancelbutton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dayLabel"
+        android:id="@+id/DaysLabel"
+        android:layout_below="@+id/waitNum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/daysInput"
+        android:layout_marginTop="10dp"
+        android:width="50dp"
+        android:layout_below="@+id/DaysLabel"
+        android:layout_centerHorizontal="true"
+        android:text="@string/zero"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:maxLength="3"
+        android:backgroundTint="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/weeksLabel"
+        android:id="@+id/WeeksLabel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/daysInput"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/weeksInput"
+        android:width="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/WeeksLabel"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:maxLength="3"
+        android:backgroundTint="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/months"
+        android:id="@+id/MonthsLabel"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/weeksInput"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/monthsInput"
+        android:width="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/MonthsLabel"
+        android:text="@string/zero"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:maxLength="3"
+        android:backgroundTint="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/yearsLabel"
+        android:id="@+id/YearsLabel"
+        android:layout_below="@+id/monthsInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/yearsInput"
+        android:layout_below="@+id/YearsLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:width="50dp"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:maxLength="3"
+        android:backgroundTint="#ffffff" />
+
+    <ImageButton
+        android:id="@+id/trashButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="trash"
+        android:background="@drawable/cutoutsymbol"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/newPageButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="newPage"
+        android:background="@drawable/newpage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:id="@+id/homeButtonChooser"
+        android:onClick="home"
+        android:background="@drawable/loadup_button_1"
+        android:layout_alignTop="@+id/newPageButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

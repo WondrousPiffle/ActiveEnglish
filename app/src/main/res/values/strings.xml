@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">ActiveEnglish</string>
+    <string name="CheckVocab">Check Vocab</string>
+    <string name="EnterNewVocab">Enter New Vocab</string>
+    <string name="selectwhatyouwanttodo">Select What You Want to Do</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="settingsName">Settings</string>
+    <string name="enterTranslation">Enter the Translation</string>
+    <string name="enterWord">Enter the Word</string>
+    <string name="submit">Submit</string>
+    <string name="check">Check</string>
+    <string name="miss">I Missed It!</string>
+    <string name="got">I Got It!</string>
+    <string name="trans">Translate:</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="OK">OK</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="dontshowagain">Don\'t show again (Can be changed later in settings)</string>
+    <string name="warning">WARNING</string>
+    <string name="proceed">This word or the translation of this word is already listed in the database. Proceed?</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="checkbytrans">Check Words By Translation</string>
+    <string name="checkbyname">Check Words By Input Name</string>
+    <string name="submitchanges">SUMBIT CHANGES</string>
+    <string name="findaword">Find a Word</string>
+    <string name="transstring">Translation</string>
+    <string name="worddef">Word</string>
+    <string name="searchdatabase">Search Database</string>
+    <string name="resetwait">Reset Wait For Missed Words</string>
+    <string name="settingstext">Settings</string>
+    <string name="skip">Skip</string>
+    <string name="hint">Hint</string>
+    <string name="showHint">Show Hint</string>
+    <string name="hintLabel">Hint:</string>
+    <string name="nextDate">Next Check Date</string>
+    <string name="NA">N/A</string>
+    <string name="adfazsdfasdfadfsagjlfkdlgjklfsadgfjgps">Reset Check Dates</string>
+    <string name="Hint">Hint available</string>
+    <string name="NoHint">No Hint Available</string>
+    <string name="chooseDayWaits">Choose Day Waits</string>
+    <string name="cutomize">Customize Day Waits</string>
+    <string name="maxdaywaits">Maximum Day Waits: 10</string>
+    <string name="done">I\'m Done</string>
+    <string name="waitNumDefault">Wait#?</string>
+    <string name="dayLabel">Days</string>
+    <string name="weeksLabel">Weeks</string>
+    <string name="yearsLabel">Years</string>
+    <string name="waitDefault">Wait #1</string>
+    <string name="zero">0</string>
+    <string name="months">Months</string>
+    <string name="home">Home</string>
+    <string name="opHint">Enter Hint (Optional)</string>
+    <string name="togglehint">Toggle Hint</string>
+    <string name="waitnum">Wait #</string>
+    <string name="showWarning">Show Warning for Duplicates</string>
+</resources>
